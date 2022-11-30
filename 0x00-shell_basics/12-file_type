@@ -1,2 +1,3 @@
 #!/bin/bash
-{ touch iamafil & file iamafil }
+file iamafil
+
