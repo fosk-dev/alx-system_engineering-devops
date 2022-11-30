@@ -1,2 +1,2 @@
 #!/bin/bash
-touch iamafil ; file iamafil
+{ touch iamafil ; file iamafil }
