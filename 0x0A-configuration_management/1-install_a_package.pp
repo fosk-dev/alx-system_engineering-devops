@@ -8,13 +8,13 @@ exec { 'install puppet-lint':
   command => '/usr/bin/gem install puppet-lint -v 2.1.1'
 }
 
-package { 'ruby':
+package { 'flask':
   ensure => 'installed',
-  before => Exec['install ruby']
+  before => Exec['pip3 install flask']
 }
 
 package { 'puppet-lint':
   ensure  => 'installed',
   before  => Exec['install puppet-lint'],
-  require => Package['ruby']
+  require => Package['flask']
 }
